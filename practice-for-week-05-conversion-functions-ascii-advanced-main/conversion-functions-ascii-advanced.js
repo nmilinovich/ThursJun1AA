@@ -2,19 +2,22 @@
 Implement these functions to convert values into the appropriate number base.
 Consult documentation on how to utilize the following methods:
   parseInt()
+  // parseInt(the thing we are converting as a string, base we are starting from)
   toString()
+
   String.fromCharCode()
+  // hexidecimals
   charCodeAt()
 */
 
 /* Base 2 to base 16 */
 function binaryToHexadecimal(blob) {
-  // Your code here
+  return `0x${parseInt(blob.slice(2), 2).toString(16)}`
 }
 
 /* Base 16 to base 2 */
 function hexadecimalToBinary(blob) {
-  // Your code here
+  return parseInt(blob)
 }
 
 /* Base 10 to ASCII */
